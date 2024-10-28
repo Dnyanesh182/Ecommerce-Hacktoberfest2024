@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Website</title>
-    <link rel="Stylesheet" href="/CSS/style.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/CSS/style.css">
     <style>
-        html{
+        /* Smooth scrolling */
+        html {
             scroll-behavior: smooth;
         }
-        .responsive-image{
+        /* Responsive images */
+        .responsive-image {
             max-width: 100%;
             height: auto;
         }
-        </style>
+    </style>
 </head>
 <body>
+    <!-- Navbar Section -->
     <div class="container">
         <div class="navbar"> 
             <div class="toggle-button-and-logo">
@@ -27,7 +31,7 @@
             <nav>
                 <ul>
                     <li><a href="#home">HOME</a></li>
-                    <li><a href="#product">PRODUCT</a></li>
+                    <li><a href="#products">PRODUCT</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                     <li><a href="#account">ACCOUNT</a></li>
@@ -35,21 +39,19 @@
             </nav>
         </div>
 
-        <!----head section-------->
+        <!-- Head Section -->
         <div class="head" id="home">
             <div class="row">
                 <div class="col2">
                     <h1>Give Your Workout<br> A New Style</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus iste ipsam<br> debitis magni quasi minus architecto!</p>
-                    <div class="col2">
-                        <img src="images/image1.png" alt="Image">
-                    </div>
+                    <img src="images/image1.png" alt="Workout Image" class="responsive-image">
                 </div>
             </div>
         </div>
     </div>
 
-    <!------featured categories-->
+    <!-- Featured Categories -->
     <div class="categories" id="products">
         <div class="small-container">
             <div class="col3">
@@ -64,12 +66,11 @@
         </div>
     </div>
     
-     
-    <!----offers section------>
+    <!-- Offers Section -->
     <div class="offer" id="about">
         <div class="small-container2">
             <div class="col2">
-                <img src="images/exclusive.png">
+                <img src="images/exclusive.png" alt="Exclusive Offer Image" class="responsive-image">
             </div>
             <div class="col2">
                 <p>Exclusively Available on Redstore</p>
@@ -79,102 +80,70 @@
         </div>
     </div>
 
-    <!-- Brands section -->
+    <!-- Brands Section -->
     <div class="brands" id="contact">
         <ul>
-            <li><img src="images/logo-godrej.png"></li>
-            <li><img src="images/logo-coca-cola.png"></li>
-            <li><img src="images/logo-oppo.png"></li>
-            <li><img src="images/logo-paypal.png"></li>
-            <li><img src="images/logo-philips.png"></li>
+            <li><img src="images/logo-godrej.png" alt="Godrej"></li>
+            <li><img src="images/logo-coca-cola.png" alt="Coca-Cola"></li>
+            <li><img src="images/logo-oppo.png" alt="Oppo"></li>
+            <li><img src="images/logo-paypal.png" alt="Paypal"></li>
+            <li><img src="images/logo-philips.png" alt="Philips"></li>
         </ul>
     </div>
 
     <!-- Back to Top Button -->
     <button id="backToTop" onclick="scrollToTop()">Top</button>
 
-    <!-- Footer -->
-
+    <!-- Footer Section -->
     <div class="footer" id="account">
         <div class="container">
             <div class="row">
+                <!-- Column 1: Download Our App -->
                 <div class="footer-col-1">
                     <h3>Download Our App</h3>
                     <div class="app">
-                        <img src="images/app-store.png">
-                        <img src="images/play-store.png">
+                        <a href="#"><img src="images/app-store.png" alt="App Store"></a>
+                        <a href="#"><img src="images/play-store.png" alt="Google Play Store"></a>
                     </div>
-                    <p>Download App for Android and iOS mobile phone.</p>
+                    <p>Get our app for Android and iOS devices.</p>
                 </div>
+                
+                <!-- Column 2: About Us -->
                 <div class="footer-col-2">
-                    <img src="images/logo-white.png">
-                    <p>Our Purpose is to sustainably make the pleasure and benefits of sports accessible to many.</p>
+                    <a href="#"><img src="images/logo-white.png" alt="Company Logo"></a>
+                    <p>Our mission is to make sports enjoyable and accessible for everyone, sustainably.</p>
                 </div>
+
+                <!-- Column 3: Useful Links -->
                 <div class="footer-col-3">
                     <h3>Useful Links</h3>
                     <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affairs</li>
+                        <li><a href="#">Coupons</a></li>
+                        <li><a href="#">Blog Post</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Join Us</a></li>
                     </ul>
                 </div>
+                
+                <!-- Column 4: Follow Us -->
                 <div class="footer-col-4">
                     <h3>Follow Us</h3>
                     <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Threads</li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Threads</a></li>
                     </ul>
-
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <!-- Column 1: Download Our App -->
-            <div class="footer-col-1">
-                <h3>Download Our App</h3>
-                <div class="app">
-                    <a href="#"><img src="images/app-store.png" alt="App Store"></a>
-                    <a href="#"><img src="images/play-store.png" alt="Google Play Store"></a>
-
                 </div>
-                <p>Get our app for Android and iOS devices.</p>
-            </div>
-            <!-- Column 2: About Us -->
-            <div class="footer-col-2">
-                <a href="#"><img src="images/logo-white.png" alt="Company Logo"></a>
-                <p>Our mission is to make sports enjoyable and accessible for everyone, sustainably.</p>
-            </div>
-            <!-- Column 3: Useful Links -->
-            <div class="footer-col-3">
-                <h3>Useful Links</h3>
-                <ul>
-                    <li><a href="#">Coupons</a></li>
-                    <li><a href="#">Blog Post</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Join Us</a></li>
-                </ul>
-            </div>
-            <!-- Column 4: Follow Us -->
-            <div class="footer-col-4">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Threads</a></li>
-                </ul>
             </div>
         </div>
+        <hr>
+        <div class="copyright">
+            <p>&copy; 2024 All Rights Reserved</p>
+        </div>
     </div>
-    <hr>
-    <div class="copyright">
-        <p>&copy; 2024 All Rights Reserved</p>
-    </div>
-</div>
 
-
+    <!-- JavaScript File -->
     <script src="script.js"></script>
 </body>
 </html>
